@@ -249,11 +249,8 @@
       <a href="#contact" class="btn-ghost">Let's Talk</a>
     </div>
   </div>
-  <div class="hero-right">
-    <div class="hero-placeholder">
-      <span class="hero-placeholder-icon">📷</span>
-      <p class="hero-placeholder-text">Add Your Photo Here</p>
-    </div>
+  <div class="hero-right" style="overflow:hidden;">
+    <img src="15.jpg" alt="Romit Chauhan" style="width:100%;height:100%;object-fit:cover;object-position:center top;min-height:500px;display:block;">
   </div>
 </section>
 
@@ -292,7 +289,7 @@
     </div>
     <div class="about-grid">
       <div class="about-photo-col">
-        <img class="about-photo-main" src="14.jfif" alt="Romit Chauhan">
+        <img class="about-photo-main" src="14.jpg" alt="Romit Chauhan">
       </div>
       <div class="about-text-col">
         <p class="about-quote">"Visuals that stop the scroll and make people feel something."</p>
@@ -408,91 +405,87 @@
 
     <div class="portfolio-grid">
 
-      <!-- Card 1 — Brand Identity (LilRaw Edit hoarding) -->
+      <!-- Card 1 — Design: 11.jpg -->
       <div class="portfolio-card fade-up" data-category="design">
-        <img class="portfolio-thumb" src="Backup_of_hoadings.jpg" alt="LilRaw Edit Brand Identity">
+        <img class="portfolio-thumb" src="11.jpg" alt="Creative Design">
         <div class="portfolio-overlay">
           <p class="portfolio-cat">Brand Identity</p>
-          <h3 class="portfolio-title">LILRAW EDIT — BRAND</h3>
-          <p class="portfolio-desc">Complete brand identity — logo, hoarding, and visual language for LilRaw Edit.</p>
+          <h3 class="portfolio-title">CREATIVE DESIGN</h3>
+          <p class="portfolio-desc">Bold visual identities and graphic design work for brands and clients.</p>
         </div>
       </div>
 
-      <!-- Card 2 — Video Editing: IMG_8490 -->
-      <div class="portfolio-card fade-up"
-           data-category="video"
-           data-type="local"
-           data-video="IMG_8490__1_.MP4"
-           data-title="CINEMATIC EDITS"
-           data-cat="Video Editing">
-        <video class="portfolio-thumb" src="IMG_8490__1_.MP4" muted loop playsinline preload="metadata"></video>
+      <!-- Card 2 — Cinematic Edits: Cloudinary -->
+      <div class="portfolio-card fade-up video-card" data-category="video"
+           data-title="CINEMATIC EDITS" data-cat="Video Editing">
+        <img class="portfolio-thumb vid-thumb" src="12.jpg" alt="Cinematic Edits">
+        <video class="portfolio-thumb vid-player" style="display:none"
+               src="https://res.cloudinary.com/dnhikdjlz/video/upload/v1777445259/WhatsApp_Video_2026-04-25_at_12.37.48_PM_tpebfe.mp4"
+               loop playsinline></video>
         <div class="play-badge"><svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg></div>
         <div class="portfolio-overlay">
           <p class="portfolio-cat">Video Editing</p>
           <h3 class="portfolio-title">CINEMATIC EDITS</h3>
           <p class="portfolio-desc">Brand film cuts with professional colour grading and sound design.</p>
-          <button class="portfolio-action">▶ Watch Video</button>
+          <button class="portfolio-action" onclick="playVid(this)">▶ Play Video</button>
         </div>
       </div>
 
-      <!-- Card 3 — Motion Graphics: WhatsApp 12.41.56 -->
-      <div class="portfolio-card fade-up"
-           data-category="motion"
-           data-type="local"
-           data-video="WhatsApp_Video_2026-04-25_at_12_41_56_PM.mp4"
-           data-title="MOTION GRAPHICS"
-           data-cat="Motion Graphics">
-        <video class="portfolio-thumb" src="WhatsApp_Video_2026-04-25_at_12_41_56_PM.mp4" muted loop playsinline preload="metadata"></video>
+      <!-- Card 3 — Motion Graphics: Cloudinary -->
+      <div class="portfolio-card fade-up video-card" data-category="motion"
+           data-title="MOTION GRAPHICS" data-cat="Motion Graphics">
+        <img class="portfolio-thumb vid-thumb" src="13.jpg" alt="Motion Graphics">
+        <video class="portfolio-thumb vid-player" style="display:none"
+               src="https://res.cloudinary.com/dnhikdjlz/video/upload/v1777445264/WhatsApp_Video_2026-04-25_at_12.41.56_PM_qladeh.mp4"
+               loop playsinline></video>
         <div class="play-badge"><svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg></div>
         <div class="portfolio-overlay">
           <p class="portfolio-cat">Motion Graphics</p>
           <h3 class="portfolio-title">ANIMATED INTROS</h3>
           <p class="portfolio-desc">Kinetic typography and logo animations for YouTube and brands.</p>
-          <button class="portfolio-action">▶ Watch Video</button>
+          <button class="portfolio-action" onclick="playVid(this)">▶ Play Video</button>
         </div>
       </div>
 
-      <!-- Card 4 — Social Media: WhatsApp 12.41.21 -->
-      <div class="portfolio-card fade-up"
-           data-category="social"
-           data-type="local"
-           data-video="WhatsApp_Video_2026-04-25_at_12_41_21_PM.mp4"
-           data-title="INSTAGRAM REELS"
-           data-cat="Social Media">
-        <video class="portfolio-thumb" src="WhatsApp_Video_2026-04-25_at_12_41_21_PM.mp4" muted loop playsinline preload="metadata"></video>
+      <!-- Card 4 — Instagram Reels: Cloudinary -->
+      <div class="portfolio-card fade-up video-card" data-category="social"
+           data-title="INSTAGRAM REELS" data-cat="Social Media">
+        <img class="portfolio-thumb vid-thumb" src="11.jpg" alt="Instagram Reels">
+        <video class="portfolio-thumb vid-player" style="display:none"
+               src="https://res.cloudinary.com/dnhikdjlz/video/upload/v1777445262/WhatsApp_Video_2026-04-25_at_12.41.21_PM_euhbpw.mp4"
+               loop playsinline></video>
         <div class="play-badge"><svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg></div>
         <div class="portfolio-overlay">
           <p class="portfolio-cat">Social Media</p>
           <h3 class="portfolio-title">INSTAGRAM REELS</h3>
-          <p class="portfolio-desc">Scroll-stopping short-form content and carousels for social growth.</p>
-          <button class="portfolio-action">▶ Watch Video</button>
+          <p class="portfolio-desc">Scroll-stopping short-form content for social growth.</p>
+          <button class="portfolio-action" onclick="playVid(this)">▶ Play Video</button>
         </div>
       </div>
 
-      <!-- Card 5 — Poster Design (LilRaw Edit website mockup) -->
+      <!-- Card 5 — Design: 14.jpg -->
       <div class="portfolio-card fade-up" data-category="design">
-        <img class="portfolio-thumb" src="website_mockup.png" alt="LilRaw Edit Website Mockup">
+        <img class="portfolio-thumb" src="14.jpg" alt="Poster Design">
         <div class="portfolio-overlay">
           <p class="portfolio-cat">Poster Design</p>
-          <h3 class="portfolio-title">WEBSITE MOCKUP</h3>
-          <p class="portfolio-desc">Video editing portfolio template — modern, cinematic, professional layout for LilRaw Edit.</p>
+          <h3 class="portfolio-title">POSTER &amp; PRINT</h3>
+          <p class="portfolio-desc">Eye-catching poster and print designs crafted with precision and style.</p>
         </div>
       </div>
 
-      <!-- Card 6 — Showreel: WhatsApp 12.43.21 -->
-      <div class="portfolio-card fade-up"
-           data-category="video"
-           data-type="local"
-           data-video="WhatsApp_Video_2026-04-25_at_12_43_21_PM.mp4"
-           data-title="SHOWREEL 2026"
-           data-cat="Video Editing">
-        <video class="portfolio-thumb" src="WhatsApp_Video_2026-04-25_at_12_43_21_PM.mp4" muted loop playsinline preload="metadata"></video>
+      <!-- Card 6 — Showreel: Cloudinary -->
+      <div class="portfolio-card fade-up video-card" data-category="video"
+           data-title="SHOWREEL 2026" data-cat="Video Editing">
+        <img class="portfolio-thumb vid-thumb" src="15.jpg" alt="Showreel 2026">
+        <video class="portfolio-thumb vid-player" style="display:none"
+               src="https://res.cloudinary.com/dnhikdjlz/video/upload/v1777445267/WhatsApp_Video_2026-04-25_at_12.43.21_PM_qwpusw.mp4"
+               loop playsinline></video>
         <div class="play-badge"><svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg></div>
         <div class="portfolio-overlay">
           <p class="portfolio-cat">Video Editing</p>
           <h3 class="portfolio-title">SHOWREEL 2026</h3>
-          <p class="portfolio-desc">A curated highlights reel of my best work across all categories.</p>
-          <button class="portfolio-action">▶ Watch Showreel</button>
+          <p class="portfolio-desc">A curated highlights reel of best work across all categories.</p>
+          <button class="portfolio-action" onclick="playVid(this)">▶ Watch Showreel</button>
         </div>
       </div>
 
@@ -640,7 +633,7 @@
   const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.1});
   document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 
-  // Active nav link on scroll
+  // Active nav
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
@@ -653,14 +646,82 @@
     });
   });
 
-  // Hover to preview video thumbnails
-  document.querySelectorAll('.portfolio-card video.portfolio-thumb').forEach(vid => {
-    const card = vid.closest('.portfolio-card');
-    card.addEventListener('mouseenter', () => vid.play());
-    card.addEventListener('mouseleave', () => { vid.pause(); vid.currentTime = 0; });
+  // ── PLAY VIDEO INLINE on button click ──
+  // Shows the video inside the card, hides the thumbnail image
+  function playVid(btn) {
+    btn.stopPropagation && btn.stopPropagation();
+    const card = btn.closest('.portfolio-card');
+    const thumb = card.querySelector('.vid-thumb');
+    const player = card.querySelector('.vid-player');
+    if (!player) return;
+    // swap thumb → video
+    thumb.style.display = 'none';
+    player.style.display = 'block';
+    player.muted = false;
+    player.play().catch(() => { player.muted = true; player.play(); });
+    btn.textContent = '⏸ Pause';
+    btn.onclick = function(e) { e.stopPropagation(); pauseVid(btn); };
+  }
+
+  function pauseVid(btn) {
+    const card = btn.closest('.portfolio-card');
+    const thumb = card.querySelector('.vid-thumb');
+    const player = card.querySelector('.vid-player');
+    player.pause();
+    player.style.display = 'none';
+    thumb.style.display = 'block';
+    btn.textContent = '▶ Play Video';
+    btn.onclick = function(e) { e.stopPropagation(); playVid(btn); };
+  }
+
+  // Stop video when mouse leaves card
+  document.querySelectorAll('.video-card').forEach(card => {
+    card.addEventListener('mouseleave', () => {
+      const player = card.querySelector('.vid-player');
+      const thumb = card.querySelector('.vid-thumb');
+      const btn = card.querySelector('.portfolio-action');
+      if (player && !player.paused) {
+        player.pause();
+        player.style.display = 'none';
+        if (thumb) thumb.style.display = 'block';
+        if (btn) { btn.textContent = btn.textContent.includes('Showreel') ? '▶ Watch Showreel' : '▶ Play Video'; }
+      }
+    });
   });
 
-  // Portfolio filter tabs
+  // ── LIGHTBOX (for YouTube type if ever added) ──
+  const lightbox = document.getElementById('lightbox');
+  const lbMedia  = document.getElementById('lightbox-media');
+  const lbTitle  = document.getElementById('lightbox-title');
+  const lbCat    = document.getElementById('lightbox-cat');
+
+  function openLightbox(card) {
+    const type  = card.dataset.type;
+    const video = card.dataset.video;
+    if (!type || !video) return;
+    lbTitle.textContent = card.dataset.title || '';
+    lbCat.textContent   = card.dataset.cat   || '';
+    if (type === 'youtube') {
+      lbMedia.innerHTML = `<iframe src="${video}" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lbMedia.innerHTML = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.portfolio-card[data-type="youtube"]').forEach(card => {
+    card.addEventListener('click', () => openLightbox(card));
+  });
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  // ── FILTER TABS ──
   document.querySelectorAll('.pf-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.pf-btn').forEach(b => b.classList.remove('active'));
@@ -675,45 +736,6 @@
       });
     });
   });
-
-  // Lightbox
-  const lightbox = document.getElementById('lightbox');
-  const lbMedia = document.getElementById('lightbox-media');
-  const lbTitle = document.getElementById('lightbox-title');
-  const lbCat   = document.getElementById('lightbox-cat');
-
-  function openLightbox(card) {
-    const type  = card.dataset.type;
-    const video = card.dataset.video;
-    const title = card.dataset.title;
-    const cat   = card.dataset.cat;
-    if (!type || !video) return;
-
-    lbTitle.textContent = title || '';
-    lbCat.textContent   = cat   || '';
-
-    if (type === 'youtube') {
-      lbMedia.innerHTML = `<iframe src="${video}" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
-    } else if (type === 'local') {
-      lbMedia.innerHTML = `<video src="${video}" controls autoplay></video>`;
-    }
-    lightbox.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeLightbox() {
-    lightbox.classList.remove('open');
-    lbMedia.innerHTML = '';
-    document.body.style.overflow = '';
-  }
-
-  document.querySelectorAll('.portfolio-card[data-type]').forEach(card => {
-    card.addEventListener('click', () => openLightbox(card));
-  });
-
-  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 </script>
 </body>
 </html>
